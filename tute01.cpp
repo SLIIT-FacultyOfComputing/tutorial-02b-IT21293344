@@ -18,6 +18,7 @@ printf("Hello World") --> std::cout << "Hello World";
 */
 
 
+/* C Programming Code
 #include <stdio.h>
 int main() 
 {
@@ -27,4 +28,23 @@ int main()
     inches = cm / 2.54;
     printf("Length in inches is %f \n", inches);
     return 0;
-}  
+}  */
+
+
+#include <iostream>
+// function main begins program execution 
+int main ()
+{
+  /* variable definition */
+  float cm, inches;
+
+  std::cout << "Enter a length in cm : "; // User Input a length in cm
+  std::cin >> cm;
+
+  inches = cm / 2.54; //Calculation for inches
+
+  std::cout << "Length in inches is " << inches << std::endl; // Display Length in inches
+
+  return 0;
+
+}//end of function main
